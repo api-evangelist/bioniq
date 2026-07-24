@@ -1,8 +1,25 @@
 aid: bioniq
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/bioniq.png
 name: Bioniq
-description: 'Bioniq is a company surfaced as a portfolio company of hv-capital and added to the API Evangelist
-  network as a stub for enrichment. Sector: consumer; healthcare. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'Bioniq is a personalized nutrition and supplement company founded in London
+  in 2019 that combines individual biomarker and blood-test data with a proprietary algorithm
+  to formulate customized vitamin and mineral blends delivered as Swiss-made granules. Its
+  consumer product line spans Bioniq GO (wellness-assessment based), Bioniq PRO (blood-test
+  driven), and Bioniq Essential, supported by iOS and Android apps for tracking health and
+  supplement routines. Bioniq is a portfolio company of HV Capital and now operates within
+  Herbalife. It exposes consumer web, mobile, and partner/affiliate surfaces but publishes
+  no public developer API, SDK, or API documentation as of this enrichment pass.'
 url: https://raw.githubusercontent.com/api-evangelist/bioniq/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,13 +29,39 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
-- Consumer; Healthcare
+- Consumer Health
+- Supplements
+- Personalized Nutrition
+- Wellness
+- Healthtech
+- Direct-to-Consumer
+- Mobile App
 apis: []
+common:
+- type: Website
+  url: https://www.bioniq.com/
+- type: HelpCenter
+  url: https://kb.bioniq.com/knowledge
+- type: Pricing
+  url: https://www.bioniq.com/products/pro
+- type: SignUp
+  url: https://my.bioniq.com/pages/quiz
+- type: Login
+  url: https://www.bioniq.com/account
+- type: TermsOfService
+  url: https://www.bioniq.com/legals/terms
+- type: PrivacyPolicy
+  url: https://www.herbalife.com/en-us/footer/privacy-policy.bioniq
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
